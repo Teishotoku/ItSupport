@@ -1,8 +1,8 @@
 import './styleTechnologies.scss'
 
-Technologies = () => {
+const Technologies = () => {
   return (
-    <section>
+    <section className='Technologies'>
 
     </section>
   )

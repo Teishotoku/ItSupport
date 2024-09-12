@@ -1,12 +1,12 @@
 import './styleChoose.scss'
 
-const Choise = () => {
+const Choose = () => {
   return (
-    <section>
+    <section className='Choose'>
 
     </section>
   )
 
 }
 
-export default Choise
+export default Choose

@@ -2,9 +2,9 @@ import './styleFooter.scss'
 
 const Footer = () => {
   return (
-    <section>
+    <footer>
 
-    </section>
+    </footer>
   )
 
 }

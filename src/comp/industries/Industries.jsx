@@ -2,7 +2,7 @@ import './styleIndustries.scss'
 
 const Industries = () => {
   return (
-    <section>
+    <section className='Industries'>
 
     </section>
   )

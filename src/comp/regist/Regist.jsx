@@ -2,7 +2,7 @@ import './styleRegist.scss'
 
 const Regist = () => {
   return (
-    <section>
+    <section className='Regist'>
 
     </section>
   )

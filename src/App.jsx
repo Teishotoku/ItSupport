@@ -13,9 +13,14 @@ function App() {
 
   return (
     <>
-      <div>
-        <p>hello</p>
-      </div>
+      <Header />
+      <Goals />
+      <Choose />
+      <Work />
+      <Technologies />
+      <Industries />
+      <Regist />
+      <Footer />
     </>
   )
 }

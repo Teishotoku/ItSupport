@@ -2,7 +2,7 @@ import './styleGoals.scss'
 
 const Goals = () => {
   return (
-    <section>
+    <section className='Goals'>
 
     </section>
   )
