@@ -1,6 +1,87 @@
 @import "../../index.scss";
 
-.Chooise{
+.Choose {
   width: 100vw;
   height: 100vh;
+  @include columnAround;
+  font-size: 1.5vw;
+  font-family: "Machina";
+}
+.whyAbout {
+  align-items: flex-start;
+  width: 70%;
+  height: 30%;
+}
+.whySize {
+  @include columnAround;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  p {
+    font-size: 1.1vw;
+    color: $grey;
+  }
+  h1 {
+    font-family: "Machina";
+  }
+}
+.whyPoint {
+  width: 70%;
+  height: 70%;
+  @include around;
+}
+.pointScroll {
+  width: 35%;
+  height: 80%;
+  @include column;
+  align-items: flex-start;
+  button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20%;
+    width: 80%;
+    background-color: $white;
+    font-size: 2vw;
+    p {
+      padding-left: 15%;
+      font-family: "Machina";
+    }
+  }
+}
+.select {
+  border: none;
+  border-left: 8px solid $primary;
+  p {
+    color: $primary;
+  }
+}
+.noSelect {
+  border: none;
+  border-left: 8px solid $grey;
+  p {
+    color: $grey;
+  }
+}
+.pointAbout {
+  width: 65%;
+  height: 100%;
+  @include center;
+}
+.pointCenter {
+  height: 50%;
+  @include columnAround;
+  align-items: flex-start;
+  border: 4px solid $grey;
+  border-radius: 96px;
+  h1 {
+    padding: 2%;
+    color: $primary;
+    font-size: 2vw;
+  }
+  p {
+    padding: 2%;
+    color: $grey;
+    font-size: 1vw;
+  }
 }
