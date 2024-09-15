@@ -1,1 +1,64 @@
 @import "../../index.scss";
+
+.Work {
+  width: 100vw;
+  height: 80vh;
+  @include columnAround;
+  font-family: "Machina";
+  h1 {
+    color: $black;
+    font-size: 2vw;
+  }
+}
+.workCenter {
+  width: 75%;
+  height: 100%;
+  @include columnAround;
+  align-items: flex-start;
+}
+.frames {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.workFrame {
+  @include columnAround;
+  align-items: flex-start;
+  border: 4px solid $grey;
+  border-radius: 96px;
+  h1 {
+    padding-left: 5%;
+    font-size: 1.5vw;
+    color: $black;
+  }
+  p {
+    padding-left: 5%;
+    color: $grey;
+    font-size: 1vw;
+  }
+}
+.workFrameNoBorder {
+  border: none;
+  @include center;
+  h1 {
+    font-size: 1.5vw;
+  }
+}
+.workFrameGap {
+  width: 97%;
+  background-color: $primary;
+  border: none;
+  position: relative;
+  top: 7%;
+  left: 3%;
+}
+.learnRound {
+  @include column;
+  font-size: 2vw;
+  text-transform: uppercase;
+  height: 30%;
+  aspect-ratio: 1 / 1;
+  border: 4px solid $black;
+  border-radius: 100%;
+}
