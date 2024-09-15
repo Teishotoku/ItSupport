@@ -1,1 +1,77 @@
 @import "../../index.scss";
+
+.Goals {
+  height: 150vh;
+  width: 100vw;
+  background: $white;
+  flex-direction: column;
+  @include around;
+  font-size: 2vw;
+  font-family: "Machina";
+  h1 {
+    color: $black;
+  }
+}
+.slides {
+  width: 70%;
+  height: 80%;
+  @include columnAround;
+}
+.Line {
+  @include around;
+  width: 100%;
+  height: 33%;
+  div {
+    border: 4px solid $grey;
+    padding: 10px;
+    border-radius: 88px;
+    height: 99%;
+  }
+  h1 {
+    color: $primary;
+    padding: 5%;
+    font-size: 2vw;
+  }
+  h2 {
+    padding: 5%;
+    font-size: 1.4vw;
+    color: $black;
+  }
+  p {
+    padding: 5%;
+    color: $grey;
+    font-size: 1vw;
+  }
+}
+.slide {
+  @include columnAround;
+  align-items: flex-start;
+  div {
+    height: 30%;
+    border: none;
+  }
+}
+.firstSlide {
+  width: 33%;
+}
+.secondSlide {
+  width: 33%;
+}
+.thirdSlide {
+  width: 33%;
+  @include imgback("../../assets/img/goals_1.png");
+}
+.fourSlide {
+  width: 50%;
+  @include imgback("../../assets/img/goals_2.png");
+}
+.fiveSlide {
+  width: 50%;
+}
+.sixSlide {
+  width: 60%;
+}
+.sevenSlide {
+  width: 40%;
+  @include imgback("../../assets/img/goals_3.png");
+}

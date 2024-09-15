@@ -1,54 +1,84 @@
 // VARIABLES & PREFERENS
-$primary: #5500ff;
+$primary: #2e2bd0;
 $black: #222222;
 $white: #ffffff;
+$grey: #444444;
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 // FONTS
-@font-face{
+@font-face {
   font-family: "Machina";
   src: url("./assets/font/NeueMachina-Regular.otf");
 }
-@font-face{
+
+@font-face {
   font-family: "MachinaLight";
   src: url("./assets/font/NeueMachina-Light.otf");
 }
-@font-face{
+
+@font-face {
   font-family: "MachinaBold";
   src: url("./assets/font/NeueMachina-Ultrabold.otf");
 }
 
+@font-face {
+  font-family: "Norms";
+  src: url("./assets/font/Norms-Pro-Bold.otf");
+}
+
 // MIXINS
-@mixin center{
+@mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@mixin around{
+
+@mixin start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+@mixin around {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-@mixin between{
+
+@mixin between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@mixin column{
+
+@mixin column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-@mixin full{
+@mixin columnAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin full {
   width: 100%;
   height: 100%;
 }
-@mixin cent{
+
+@mixin cent {
   display: flex;
   justify-content: center;
+}
+@mixin imgback($backimg) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url($backimg);
 }
