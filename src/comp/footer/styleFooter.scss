@@ -1,1 +1,108 @@
 @import "../../index.scss";
+
+footer {
+  @include center;
+  background-color: $white;
+  height: 80vh;
+  width: 100vw;
+  font-family: "Machina";
+}
+.footerCenter {
+  @include columnBetween;
+  width: 95%;
+  height: 100%;
+}
+.footerNoth {
+  height: 20%;
+}
+.footerUp {
+  @include around;
+  height: 65%;
+  width: 100%;
+  border-top: 2px solid $black;
+  border-bottom: 2px solid $black;
+}
+.footerSocial {
+  @include columnAround;
+  height: 80%;
+  width: 40%;
+  p {
+    color: $primary;
+    text-decoration: underline $primary;
+    font-size: 1vw;
+  }
+  button {
+    font-size: 1vw;
+    background-color: $primary;
+    border: none;
+    border-radius: 16px;
+    font-family: "Machina";
+    width: 30%;
+    height: 13%;
+    img {
+      height: 40%;
+      padding-left: 5%;
+    }
+  }
+}
+.footerLogos {
+  @include around;
+  width: 35%;
+}
+.footerImg {
+  display: flex;
+  justify-content: flex-start;
+  width: 35%;
+}
+.footerOffices {
+  @include columnAround;
+  height: 80%;
+  width: 15%;
+  div {
+    @include columnAround;
+    align-items: flex-start;
+    width: 100%;
+    height: 30%;
+    h1 {
+      color: $black;
+    }
+    h2 {
+      color: $primary;
+    }
+    p {
+      color: $grey;
+    }
+  }
+}
+.footerServices {
+  @include columnAround;
+  height: 80%;
+  width: 15%;
+  div {
+    @include start;
+    height: 20%;
+    width: 100%;
+    h1 {
+      color: $black;
+      font-size: 1.2vw;
+    }
+  }
+  ul {
+    @include columnAround;
+    align-items: flex-start;
+    height: 70%;
+    width: 100%;
+    li {
+      font-size: 1vw;
+      list-style: none;
+      color: $primary;
+    }
+  }
+}
+.footerDown {
+  width: 100%;
+  height: 15%;
+  @include around;
+  color: $grey;
+  font-size: 0.5vw;
+}
