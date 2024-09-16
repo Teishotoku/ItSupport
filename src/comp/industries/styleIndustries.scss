@@ -1,1 +1,42 @@
 @import "../../index.scss";
+
+.Industries {
+  @include center;
+  height: 60vh;
+  width: 100vw;
+  font-family: "Machina";
+}
+.IndustriesCenter {
+  @include columnAround;
+  align-items: flex-start;
+  width: 80%;
+  height: 80%;
+  h1 {
+    font-size: 2vw;
+  }
+}
+.industrieCards {
+  @include around;
+  width: 100%;
+  height: 100%;
+}
+.industrieCard {
+  @include columnAround;
+  align-items: flex-start;
+  height: 100%;
+  width: 30%;
+  h1 {
+    font-size: 1vw;
+  }
+  p {
+    color: $grey;
+    font-size: 0.8vw;
+  }
+}
+.industrieCardUp {
+  @include columnAround;
+  align-items: flex-start;
+  height: 50%;
+  width: 100%;
+  border-bottom: 4px solid $black;
+}
