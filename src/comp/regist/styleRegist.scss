@@ -1,1 +1,94 @@
 @import "../../index.scss";
+
+.Regist {
+  height: 100vh;
+  width: 100vw;
+  @include center;
+  font-family: "Machina";
+  input {
+    background-color: $primary;
+    border: none;
+    border-bottom: 2px solid $grey;
+    color: $grey;
+  }
+}
+.RegistCenter {
+  background-color: $primary;
+  width: 90%;
+  height: 90%;
+  border-radius: 48px;
+  @include around;
+}
+.registLeft {
+  width: 40%;
+  height: 80%;
+}
+.registLeftHead {
+  height: 30%;
+  font-size: 3vw;
+}
+.registLeftInputs {
+  height: 70%;
+  @include column;
+  align-items: flex-start;
+  justify-content: space-around;
+  input {
+    width: 90%;
+    height: 20%;
+    font-size: 1vw;
+    font-family: "Machina";
+  }
+  img {
+    padding-left: 10%;
+    color: $primary;
+  }
+  button {
+    font-family: "Machina";
+    font-size: 1vw;
+    background-color: $white;
+    color: $primary;
+    border: none;
+    border-radius: 16px;
+    width: 25%;
+    height: 10%;
+  }
+}
+.registRight {
+  width: 40%;
+  height: 80%;
+}
+.registRightHead {
+  @include columnAround;
+  align-items: flex-start;
+  height: 30%;
+  width: 100%;
+  font-size: 1vw;
+  color: $grey;
+  b {
+    color: $white;
+    text-decoration: underline $white;
+  }
+  button {
+    font-size: 0.7vw;
+    @include around;
+    height: 20%;
+    width: 30%;
+    background-color: $primary;
+    border: 2px solid $white;
+    color: $white;
+    border-radius: 12px;
+    font-family: "Machina";
+  }
+}
+.registRightInputs {
+  width: 100%;
+  height: 43%;
+  @include columnAround;
+  align-items: flex-start;
+  input {
+    font-size: 1.3vw;
+    font-family: "Machina";
+    width: 80%;
+    height: 20%;
+  }
+}
