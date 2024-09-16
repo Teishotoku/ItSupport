@@ -1,1 +1,92 @@
 @import "../../index.scss";
+
+.Technologies {
+  width: 100vw;
+  height: 80vh;
+  @include columnAround;
+  font-size: 2vw;
+  font-family: "Machina";
+}
+.techCenter {
+  width: 80%;
+  height: 47%;
+  @include columnAround;
+  align-items: flex-start;
+}
+.techP {
+  width: 100%;
+  @include center;
+  justify-content: end;
+}
+.techEnd {
+  padding-right: 20%;
+  width: 30%;
+  font-size: 1vw;
+  color: $grey;
+}
+.techLine {
+  width: 80%;
+  height: 25%;
+  display: flex;
+}
+.techCont {
+  @include columnBetween;
+  width: 12.5%;
+  color: $grey;
+  font-size: 0.7vw;
+}
+.techContPrimary {
+  @include columnBetween;
+  width: 12.5%;
+  height: 100%;
+  color: $black;
+  font-size: 0.9vw;
+  font-weight: bold;
+}
+.techContGraph {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.techContRound {
+  height: 40%;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  background-color: $grey;
+}
+.techContRoundExtra {
+  @include center;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  background-color: rgba($color: $primary, $alpha: 0.3);
+  div {
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    background-color: $primary;
+  }
+}
+.techContLine {
+  width: 99%;
+  height: 5%;
+  background-color: $grey;
+}
+.techIcon {
+  height: 10%;
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  div {
+    @include center;
+    border: 4px solid $primary;
+    border-radius: 48px;
+    height: 100%;
+    width: 6%;
+    img {
+      height: 80%;
+      aspect-ratio: 1 / 1;
+    }
+  }
+}
