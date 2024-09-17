@@ -72,8 +72,8 @@
   height: 50%;
   @include columnAround;
   align-items: flex-start;
-  border: 4px solid $grey;
-  border-radius: 96px;
+  border: 2px solid $grey;
+  border-radius: 48px;
   h1 {
     padding: 2%;
     color: $primary;

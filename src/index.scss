@@ -83,7 +83,7 @@ $grey: #444444;
   justify-content: center;
 }
 @mixin imgback($backimg) {
-  background-size: cover;
+  background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url($backimg);
