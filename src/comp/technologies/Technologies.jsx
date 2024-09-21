@@ -1,7 +1,14 @@
 import "./styleTechnologies.scss";
 import js_logo from "../../assets/img/java-script.svg";
+import Round from "./Round";
+import { useState } from "react";
 
 const Technologies = () => {
+  const [activeButton, setActiveButton] = useState(null);
+  const handleClick = (index) => {
+    setActiveButton(index);
+  };
+
   return (
     <section className="Technologies">
       <div className="techCenter">
@@ -18,69 +25,14 @@ const Technologies = () => {
         </div>
       </div>
       <div className="techLine">
-        <div className="techContPrimary">
-          <div className="techContGraph">
-            <div className="techContRoundExtra">
-              <div />
-            </div>
-            <div className="techContLine" />
-          </div>
-          <p>Second technology description</p>
-        </div>
-        <div className="techCont">
-          <div className="techContGraph">
-            <div className="techContRound" />
-            <div className="techContLine" />
-          </div>
-          <p>Second technology description</p>
-        </div>
-        <div className="techCont">
-          <div className="techContGraph">
-            <div className="techContRound" />
-            <div className="techContLine" />
-          </div>
-          <p>Second technology description</p>
-        </div>
-        <div className="techCont">
-          <div className="techContGraph">
-            <div className="techContRound" />
-            <div className="techContLine" />
-          </div>
-          <p>Second technology description</p>
-        </div>
-        <div className="techCont">
-          <div className="techContGraph">
-            <div className="techContRound" />
-            <div className="techContLine" />
-          </div>
-          <p>Second technology description</p>
-        </div>
-        <div className="techCont">
-          <div className="techContGraph">
-            <div className="techContRound" />
-            <div className="techContLine" />
-          </div>
-          <p>Second technology description</p>
-        </div>
-        <div className="techCont">
-          <div className="techContGraph">
-            <div className="techContRound" />
-            <div className="techContLine" />
-          </div>
-          <p>Second technology description</p>
-        </div>
-        <div className="techCont">
-          <div className="techContGraph">
-            <div className="techContRound" />
-            <div className="techContLine" />
-          </div>
-          <p>Second technology description</p>
-        </div>
-      </div>
-      <div className="techIcon">
-        <div>
-          <img src={js_logo} alt="" />
-        </div>
+        <Round variable="0" actBut={activeButton} hndClk={handleClick} />
+        <Round variable="1" actBut={activeButton} hndClk={handleClick} />
+        <Round variable="2" actBut={activeButton} hndClk={handleClick} />
+        <Round variable="3" actBut={activeButton} hndClk={handleClick} />
+        <Round variable="4" actBut={activeButton} hndClk={handleClick} />
+        <Round variable="5" actBut={activeButton} hndClk={handleClick} />
+        <Round variable="6" actBut={activeButton} hndClk={handleClick} />
+        <Round variable="7" actBut={activeButton} hndClk={handleClick} />
       </div>
     </section>
   );

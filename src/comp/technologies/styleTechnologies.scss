@@ -34,6 +34,14 @@
   width: 12.5%;
   color: $grey;
   font-size: 0.7vw;
+  height: 100%;
+  .techIcon {
+    display: flex;
+    height: 30%;
+  }
+  .techContImg {
+    display: none;
+  }
 }
 .techContPrimary {
   @include columnBetween;
@@ -42,6 +50,16 @@
   color: $black;
   font-size: 0.9vw;
   font-weight: bold;
+  .techIcon {
+    display: flex;
+    width: 100%;
+    height: 30%;
+  }
+  .techContImg {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border-radius: 32px;
+  }
 }
 .techContGraph {
   width: 100%;
@@ -55,6 +73,7 @@
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   background-color: $grey;
+  border: none;
 }
 .techContRoundExtra {
   @include center;
@@ -62,6 +81,7 @@
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   background-color: rgba($color: $primary, $alpha: 0.3);
+  border: none;
   div {
     height: 50%;
     aspect-ratio: 1 / 1;
@@ -75,6 +95,7 @@
   background-color: $grey;
 }
 .techIcon {
+  display: none;
   height: 10%;
   width: 80%;
   aspect-ratio: 1 / 1;

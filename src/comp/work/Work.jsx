@@ -1,4 +1,5 @@
 import "./styleWork.scss";
+import Frame from "./frame";
 
 const Work = () => {
   return (
@@ -9,22 +10,10 @@ const Work = () => {
           <div className="workFrameNoBorder">
             <h1>Requirements analysis and statement of work</h1>
           </div>
-          <div className="workFrame">
-            <h1>Design (if required)</h1>
-            <p>Some words about this step in our work</p>
-          </div>
-          <div className="workFrame">
-            <h1>Development, show demo version</h1>
-            <p>Some words about this step in our work</p>
-          </div>
-          <div className="workFrame">
-            <h1>Testing, completion</h1>
-            <p>Some words about this step in our work</p>
-          </div>
-          <div className="workFrame">
-            <h1>Product launch</h1>
-            <p>Some words about this step in our work</p>
-          </div>
+          <Frame title="Design (if required)" />
+          <Frame title="Development, show demo version" />
+          <Frame title="Testing completion" />
+          <Frame title="Product launch" />
           <div className="workFrame workFrameGap">
             <h1>Continued technical support</h1>
             <p>

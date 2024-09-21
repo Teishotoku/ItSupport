@@ -69,6 +69,7 @@
   @include center;
 }
 .pointCenter {
+  width: 100%;
   height: 50%;
   @include columnAround;
   align-items: flex-start;

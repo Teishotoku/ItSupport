@@ -1,6 +1,11 @@
 import "./styleChoose.scss";
+import { useState } from "react";
 
 const Choose = () => {
+  const [text, setText] = useState("A small text");
+  function textClick(content) {
+    setText(content);
+  }
   return (
     <section className="Choose">
       <div className="whyAbout">
@@ -16,31 +21,23 @@ const Choose = () => {
 
       <div className="whyPoint">
         <div className="pointScroll">
-          <button className="select">
+          <button className="select" onClick={() => textClick("первая")}>
             <p>Team</p>
           </button>
-          <button className="noSelect">
+          <button className="noSelect" onClick={() => textClick("вторая")}>
             <p>Community</p>
           </button>
-          <button className="noSelect">
+          <button className="noSelect" onClick={() => textClick("третья")}>
             <p>Solution</p>
           </button>
-          <button className="noSelect">
+          <button className="noSelect" onClick={() => textClick(8 * 35)}>
             <p>Quality</p>
           </button>
         </div>
         <div className="pointAbout">
           <div className="pointCenter">
             <h1>Close-knit team</h1>
-            <p>
-              A small text describing one of the goals in two lines. A small
-              text describing one of the goals in two lines. A small text
-              describing one of the goals in two lines. A small text describing
-              one of the goals in two lines. A small text describing one of the
-              goals in two lines. A small text describing one of the goals in
-              two lines. A small text describing one of the goals in two lines.
-              A small text describing one of the goals in two lines.
-            </p>
+            <p>{text}</p>
           </div>
         </div>
       </div>
